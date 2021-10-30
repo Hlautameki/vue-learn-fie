@@ -50,6 +50,26 @@
       </ul>
     </nav>
   </div>
+
+  <!-- Product Info -->
+  <section class="section">
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column is-3">
+          <h1 class="is-size-1 title">Docker</h1>
+          <h2 class="is-size-2 subtitle">Dark Roast</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum fugiat odit voluptates molestias aut ullam, modi ratione recusandae asperiores nesciunt?</p>
+        </div>
+        <div class="column is-5 has-text-centered">
+          <img src="../../assets/product.png" class="px-6" alt="docker coffee image">
+        </div>
+        <div class="column is-4">
+          <div class="is-size-4 mb-4">$10.95</div>
+          <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, natus!</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
