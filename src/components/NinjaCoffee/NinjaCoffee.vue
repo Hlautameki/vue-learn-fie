@@ -39,6 +39,17 @@
       </div>
     </div>
   </nav>
+
+  <!--BreadCrumbs-->
+  <div class="section pt-4 pb-0">
+    <nav class="breadcrumb has-arrow-separator">
+      <ul class="container">
+        <li><a class="has-text-grey">Coffee Ninja</a></li>
+        <li><a class="has-text-grey">Shop</a></li>
+        <li><a class="is-active">Docker Dark Roast</a></li>
+      </ul>
+    </nav>
+  </div>
 </template>
 
 <script>
