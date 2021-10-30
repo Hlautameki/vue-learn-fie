@@ -54,18 +54,31 @@
   <!-- Product Info -->
   <section class="section">
     <div class="container">
-      <div class="columns is-vcentered">
-        <div class="column is-3">
-          <h1 class="is-size-1 title">Docker</h1>
-          <h2 class="is-size-2 subtitle">Dark Roast</h2>
+      <div class="columns is-vcentered is-multiline">
+        <div class="column is-3-desktop is-6-tablet">
+          <h1 class="is-size-3-mobile is-size-1-desktop title">Docker</h1>
+          <h2 class="is-size-3-mobile is-size-2-desktop subtitle">Dark Roast</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum fugiat odit voluptates molestias aut ullam, modi ratione recusandae asperiores nesciunt?</p>
         </div>
-        <div class="column is-5 has-text-centered">
+        <div class="column is-5-desktop is-6-tablet has-text-centered">
           <img src="../../assets/product.png" class="px-6" alt="docker coffee image">
         </div>
-        <div class="column is-4">
+        <div class="column is-4-desktop is-12-tablet">
           <div class="is-size-4 mb-4">$10.95</div>
           <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, natus!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-8 is-variable">
+        <div class="column is-7-tablet">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam autem est qui, aliquid ut doloribus quidem, consequatur perferendis quae inventore. Dolor molestias non, cumque esse reiciendis ipsa explicabo assumenda?</p>
+        </div>
+        <div class="column is-5-tablet">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, delectus nemo? Nemo minus ut illo beatae ducimus unde, error ex, voluptatum doloribus temporibus rem iste accusantium veritatis facere sunt culpa?</p>
         </div>
       </div>
     </div>
