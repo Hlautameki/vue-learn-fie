@@ -75,7 +75,29 @@
     <div class="container">
       <div class="columns is-8 is-variable">
         <div class="column is-7-tablet">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam autem est qui, aliquid ut doloribus quidem, consequatur perferendis quae inventore. Dolor molestias non, cumque esse reiciendis ipsa explicabo assumenda?</p>
+          <!-- Tabbed content -->
+          <div class="tabs is-boxed">
+            <ul>
+              <li :class="{ 'is-active': isProductDetailsTabActive}"
+                @click="handleTabClick">
+                <a>Product Details</a>
+              </li>
+              <li :class="{ 'is-active': !isProductDetailsTabActive}"
+                @click="handleTabClick">
+                <a>Delivery Information</a>
+              </li>
+            </ul>
+          </div>
+          <div class="px-2">
+            <div v-show="isProductDetailsTabActive">
+              <h3 class="is-size-5 title">Product Details</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium hic voluptates, distinctio at optio ratione. Impedit velit, voluptates quia tempora maxime possimus minima magni, pariatur fuga, quasi atque. Minima?</p>
+            </div>
+            <div v-show="!isProductDetailsTabActive">
+              <h3 class="is-size-5 title">Delivery Information</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium hic voluptates, distinctio at optio ratione. Impedit velit, voluptates quia tempora maxime possimus minima magni, pariatur fuga, quasi atque. Minima?</p>
+            </div>
+          </div>
         </div>
         <div class="column is-5-tablet">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, delectus nemo? Nemo minus ut illo beatae ducimus unde, error ex, voluptatum doloribus temporibus rem iste accusantium veritatis facere sunt culpa?</p>
@@ -90,12 +112,16 @@ export default {
   name: 'NinjaCoffee',
   data() {
     return {
-      isNavbarMenuActive: false
+      isNavbarMenuActive: false,
+      isProductDetailsTabActive: true
     }
   },
   methods: {
     setNavbarMenuActive() {
       this.isNavbarMenuActive = !this.isNavbarMenuActive
+    },
+    handleTabClick() {
+      this.isProductDetailsTabActive = !this.isProductDetailsTabActive
     }
   }
 
