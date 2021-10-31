@@ -66,6 +66,7 @@
         <div class="column is-4-desktop is-12-tablet">
           <div class="is-size-4 mb-4">$10.95</div>
           <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, natus!</p>
+          <button class="button is-primary">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -107,6 +108,9 @@
             </div>
             <div class="message-body">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sunt in libero quasi quidem laudantium! Illo repudiandae facere rerum iure, ipsum dicta a eligendi explicabo veritatis quisquam! Ex, tempora saepe!</p>
+            </div>
+            <div class="has-text-centered">
+              <button class="button mb-5">Sign Up</button>
             </div>
           </div>
         </div>
