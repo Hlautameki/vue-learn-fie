@@ -100,7 +100,15 @@
           </div>
         </div>
         <div class="column is-5-tablet">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, delectus nemo? Nemo minus ut illo beatae ducimus unde, error ex, voluptatum doloribus temporibus rem iste accusantium veritatis facere sunt culpa?</p>
+          <!-- message box -->
+          <div class="message">
+            <div class="message-header">
+              <p>Ern Points with the Coffee Club</p>
+            </div>
+            <div class="message-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sunt in libero quasi quidem laudantium! Illo repudiandae facere rerum iure, ipsum dicta a eligendi explicabo veritatis quisquam! Ex, tempora saepe!</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
