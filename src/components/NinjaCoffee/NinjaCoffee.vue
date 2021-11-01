@@ -110,13 +110,79 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sunt in libero quasi quidem laudantium! Illo repudiandae facere rerum iure, ipsum dicta a eligendi explicabo veritatis quisquam! Ex, tempora saepe!</p>
             </div>
             <div class="has-text-centered">
-              <button class="button mb-5">Sign Up</button>
+              <button class="button mb-5" @click="isModalActive = true">Sign Up</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Cards -->
+  <section class="section is-hidden-mobile">
+    <div class="container">
+      <h3 class="title has-text-centered is-size-4">Related Products</h3>
+      <div class="columns mt-5 is-8 is-variable is-centered">
+        <div class="column is-4-tablet is-3-desktop">
+          <div class="card">
+            <div class="card-image has-text-centered px-6">
+              <img src="../../assets/p1.png" alt="product ">
+            </div>
+            <div class="card-content">
+              <p>$12.95</p>
+              <p class="title is-size-5">Cortadro Cup</p>
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <a href="" class="has-text-grey">View</a>
+              </p>
+            </footer>
+          </div>
+        </div>
+        <div class="column is-4-tablet is-3-desktop">
+          <div class="card">
+            <div class="card-image has-text-centered px-6">
+              <img src="../../assets/p2.png" alt="product ">
+            </div>
+            <div class="card-content">
+              <p>$12.95</p>
+              <p class="title is-size-5">Docker Light</p>
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <a href="" class="has-text-grey">View</a>
+              </p>
+            </footer>
+          </div>
+        </div>
+        <div class="column is-4-tablet is-3-desktop">
+          <div class="card">
+            <div class="card-image has-text-centered px-6">
+              <img src="../../assets/p3.png" alt="product ">
+            </div>
+            <div class="card-content">
+              <p>$12.95</p>
+              <p class="title is-size-5">Coffee Crush</p>
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <a href="" class="has-text-grey">View</a>
+              </p>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- modal -->
+  <div class="modal" :class="{ 'is-active' : isModalActive}">
+    <div class="modal-background" @click="isModalActive = false"></div>
+    <div class="modal-content has-background-white px-5 py-5">
+      <h3 class="title mb-6">Join the Club</h3>
+    </div>
+  </div>
+  
 </template>
 
 <script>
@@ -125,7 +191,8 @@ export default {
   data() {
     return {
       isNavbarMenuActive: false,
-      isProductDetailsTabActive: true
+      isProductDetailsTabActive: true,
+      isModalActive: false
     }
   },
   methods: {
