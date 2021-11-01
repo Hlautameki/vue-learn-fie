@@ -219,7 +219,12 @@
       </form>
     </div>
   </div>
-  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>Copyright 2020 Coffee Ninja</p>
+    </div>
+  </footer>
 </template>
 
 <script>
